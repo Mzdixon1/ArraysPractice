@@ -48,26 +48,60 @@ namespace ArraysPractice
 
 
             //dataType[] nameOfArray = new datatType[#ofElements];
-            int[] numberOfSeats = new int[21];
-            string[] studentsInClass = new string[21];
-            //nameofArray[index] = Element;
-            studentsInClass[0] = "Jordan";
+            // int[] numberOfSeats = new int[21];
+            // string[] studentsInClass = new string[21];
+            // //nameofArray[index] = Element;
+            // studentsInClass[0] = "Jordan";
 
-            Console.WriteLine("Please enter in the mane of he next student.");
+            // Console.WriteLine("Please enter in the mane of he next student.");
 
-            studentsInClass[1] = Console.ReadLine();
-            Console.WriteLine("The student in the second seat is {0}.", studentsInClass[1]);
-            //ask user for input
-            Console.WriteLine("Please enter the age of the person in the first seat.");
-            //Create a new int array with 21 spots and call it ageOfStudentsInClass
-            int[] ageOfStudentsInClass = new int[21];
-           //Assign the value of the int at the 0 index of ageOfStudentsInClass to...
-           //...the users input converted into an int
-            ageOfStudentsInClass[0] = int.Parse(Console.ReadLine()); // INT.PARSE turns the ageOfStudents from a STRING to an INT for the console.readline. Console.Readline takes in a string.
-            Console.WriteLine("The age of the student in the first seat is " + ageOfStudentsInClass[0]);
-            //Create a new string variable and set it equal to the int at the index of 0
-            //and convert it into a string
-            string firstIndex = ageOfStudentsInClass[0].ToString();
-        }
+            // studentsInClass[1] = Console.ReadLine();
+            // Console.WriteLine("The student in the second seat is {0}.", studentsInClass[1]);
+            // //ask user for input
+            // Console.WriteLine("Please enter the age of the person in the first seat.");
+            // //Create a new int array with 21 spots and call it ageOfStudentsInClass
+            // int[] ageOfStudentsInClass = new int[21];
+            ////Assign the value of the int at the 0 index of ageOfStudentsInClass to...
+            ////...the users input converted into an int
+            // ageOfStudentsInClass[0] = int.Parse(Console.ReadLine()); // INT.PARSE turns the ageOfStudents from a STRING to an INT for the console.readline. Console.Readline takes in a string.
+            // Console.WriteLine("The age of the student in the first seat is " + ageOfStudentsInClass[0]);
+            // //Create a new string variable and set it equal to the int at the index of 0
+            // //and convert it into a string
+            // string firstIndex = ageOfStudentsInClass[0].ToString();
+
+            //string[] restaurantsInMall = { "Subway", "Saki", "Dunkin Donuts", "Chic Fil-a" };
+            //Console.WriteLine(restaurantsInMall.Length);
+            ////For Review
+            ////Declare and not initialize
+            //int[] myIntArrayAgain;
+            ////Declare and initialize an array when I know the elements
+            //char[] lettersInFirstName = { 'D', 'i', 'x', 'o', 'n' };
+            ////Declare and Initialize an Array when I dont know the elements but I know how many
+            //string[] variableName = new string[42];
+
+            //To practice using .Length, creat an char array of the letters in your middle name
+            //char[] myMiddleName = { 'J', 'E', 'r', 'n', 'e', 'L', 'L' };
+            ////...and print the number of chars to the console.
+            //Console.WriteLine(myMiddleName.Length);
+
+            //Declare and initialize a string array.
+            //Using the Length property, print the Second to Last element in the array
+            //string[] restaurantsInMall = { "Subway", "Saki", "Dunkin Donuts", "Red Lobster", "Chic Fil-a" };
+            //Console.WriteLine(restaurantsInMall[restaurantsInMall.Length - 2]);// 0, 1, 2, 3, 4, 5  -2 will give you the second to the last
+
+            //IndexOf is a method used to search an array for a specified value and returns 
+            //the index position of the first matching value found.
+            //int[] bestYearsEver = {1985, 1999, 1991, 2000, 1985 };
+            //Console.WriteLine(Array.IndexOf(bestYearsEver, 1985));
+            ////LastIndexOf is a method used to search an array for a specified value and returns the index position of the last matching value found.
+            //Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
+
+            //Reverse Method
+            int[] palindromeNumbers = { 1, 2, 3, 4, 5, 6, 7 };
+            Console.WriteLine(palindromeNumbers[0]);
+            Array.Reverse(palindromeNumbers);
+            Console.WriteLine(palindromeNumbers[0]);
+            
         }
     }
+}
