@@ -10,9 +10,6 @@ namespace ArraysPractice
     {
         static void Main(string[] args)
         {
-
-
-
             ////declaring an array without initializing
             //int[] myFirstArray;
             ////declaring and initializing a second array
